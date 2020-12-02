@@ -154,7 +154,7 @@ endif ()
 # Make sure the final executable has symbols exported
 set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -rdynamic")
 
-find_program (OBJCOPY_PATH NAMES "llvm-objcopy" "llvm-objcopy-10" "llvm-objcopy-9" "llvm-objcopy-8" "objcopy")
+find_program (OBJCOPY_PATH NAMES "llvm-objcopy" "llvm-objcopy-10" "llvm-objcopy-9" "llvm-objcopy-8" "objcopy"  PATHS "/usr/local/Cellar/llvm/11.0.0/bin/")
 if (OBJCOPY_PATH)
     message(STATUS "Using objcopy: ${OBJCOPY_PATH}.")
 
